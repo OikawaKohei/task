@@ -1,0 +1,124 @@
+
+body {
+  background-color: #F5F6F8;
+}
+
+body {
+  background-color: #efefef;
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+}
+
+h1,h2,h3,h4,h5 {
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+git 
+/* headerセクション */
+header {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  margin-left: 5px;
+}
+
+.logo-img {
+  width: 100%;
+}
+
+.header-navigation {
+  margin-right: 5px;
+}
+
+.header-navigation li {
+  padding: 0 30px;
+  text-align: center;
+  list-style-type: none;
+}
+
+.header-navigation li a {
+  color: #333;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.header-navigation {
+  margin-right: 5px;
+  display: flex;
+}
+
+.container {
+  width: 870px;
+  height: auto;
+  margin: 40px auto;
+}
+
+.text-title {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.card-contents {
+  padding: 22px 32px;
+  display: block;
+  margin: 30px 0;
+  background-color: #fff;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.information-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.information-list li {
+  margin-bottom: 10px;
+}
+
+.user-items {
+  margin-top: 32px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.user-items .item {
+  margin-bottom: 24px;
+  margin-right: 48px;
+  text-align: center;
+}
+
+.user-items .item img {
+  width: 150px;
+  height: 150px;
+}
+
+.user-items .item .username {
+  color: #818181;
+  margin: 10px auto;
+}
+
+footer {
+  background-color: #818181;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.copyright {
+  font-size: 12px;
+  color: #ffffff;
+}
