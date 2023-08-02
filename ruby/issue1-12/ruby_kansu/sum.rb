@@ -5,16 +5,14 @@ resultは関数の結果に関するするところ？現在０
 =end
 def sum
   result = 0
-=begin
-計算方法の指示部分(メソッド部分)
-iは１から10まで順番に計算していく
-=end
-(1..10).each do |i|
-# resultにiを順番に足していく
+  #計算方法の指示部分(メソッド部分)
+  #iは１から10まで順番に計算していく
+  (1..10).each do |i|
+  # resultにiを順番に足していく
   result += i
- end
-# 戻り値：計算（メソッド）の終了
- return result
+  end
+  # 戻り値：計算（メソッド）の終了
+  return result
 end
 # 計算結果を表示する
 puts sum
@@ -26,20 +24,18 @@ puts "-----sum max(引数）の関数-----"
 sumは合計する
 (max)はmaxまで
 =end
-def sum(max)
+def sum_max(max)
   result = 0
-# iは１からmaxまで順番に足していく
-for i in 1..max
-   result += i
-end
-=begin
-戻り値
-計算が終了したので、resultの題目に戻る
-=end
+  # iは１からmaxまで順番に足していく
+  for i in 1..max
+     result += i
+  end
+  # 戻り値
+  # 計算が終了したので、resultの題目に戻る
   return result
 end
 # maxの値を与える
-puts sum(1000)
+puts sum_max(1000)
 
 #　繰り返しのない戻り値
 def print_number
@@ -82,7 +78,7 @@ puts "-1-"
 =end
 def clac(number)
   return number * 2
-end 
+end
 puts clac(2500)
 
 puts "-2-"
@@ -101,12 +97,12 @@ arrという配列の仮因数をもち、数値が入った配列[1, 3, 5, 7, 9
 その要素を全てかけた結果を返す関数を作成する。
 =end
 arr = [1, 3, 5, 7, 9]
- result = 1
- for i in arr
-   result *= i
- end
- puts result
- 
+result = 1
+for i in arr
+ result *= i
+end
+puts result
+
 puts "-4-"
 =begin
 [応用]下記プログラムは、配列の中で１番大きい値を返すmax_arrayという
@@ -116,10 +112,11 @@ puts "-4-"
 def max_array(arr)
   max_number = arr[0]
   arr.each do |a|
-    if max_number < arr|a|
-       max_number = arr|a|
+    if max_number < a
+       max_number = a
     end
-end
+  end
+  max_number
 end
 
-puts arr[13, 11, 24, 15, 28, 8, 25, 23, 17, 15]
+puts max_array([13, 11, 24, 15, 28, 8, 25, 23, 17, 15])
